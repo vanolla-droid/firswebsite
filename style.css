@@ -1,0 +1,22 @@
+/* CSS untuk tombol */.tombol{
+        display: inline-block;
+        padding: 12px 24 px;
+        font-size: 14px;
+        font-family: sans-serif;
+        font-weight: bold;
+        text-decoration: none; /*menghilngkan gasir bawah link*/
+        color: white; /*warna tulisan link*/
+        background-color: #f44336; /*warna latar belakang link*/
+        border-radius: 8px; /*membuat sudut link menjadi melengkung*/
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1); /*memberikan efek bayangan pada link*/
+        transition: all 0.3s ease; /*memberikan efek transisi pada link saat di hover*/
+        }
+        /* (efek)CSS untuk tombol saat di hover */.tombol:hover{
+        background-color: #d32f2f; /*warna latar belakang link saat di hover*/
+        transform: translateY(-2px); /*menggeser link ke atas saat di hover*/
+        box-shadow: 0 6px 12px rgba(0,0,0,0.15); /*memberikan efek bayangan pada link saat di hover*/
+        }
+        /* CSS untuk tombol saat di klik */.tombol:active{
+            transform: translateY(0); /*mengembalikan posisi link ke semula saat di klik*/
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
