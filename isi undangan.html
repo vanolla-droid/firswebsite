@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Kerajaan</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+           /* ========================================================
+   PENGATURAN HALAMAN UTAMA (BACKGROUND & POSISI)
+   ======================================================== */
+body {
+    background-color: #0B192C;   /* Mewarnai latar belakang layar dengan warna biru sangat tua */
+    color: #F1F1F1;              /* Mewarnai semua teks umum dengan warna putih keabu-abuan */
+    font-family: 'Playfair Display', serif; /* Mengubah gaya huruf menjadi font klasik berpita (formal) */
+    display: flex;               /* Mengaktifkan sistem tata letak fleksibel */
+    justify-content: center;     /* Menggeser kotak undangan tepat ke tengah secara horizontal (kiri-kanan) */
+    align-items: center;         /* Menggeser kotak undangan tepat ke tengah secara vertikal (atas-bawah) */
+    height: 100vh;               /* Membuka tinggi halaman penuh sesuai ukuran tinggi layar monitor/HP */
+    margin: 0;                   /* Menghilangkan jarak aman bawaan di pinggir layar komputer */
+}
+
+/* ========================================================
+   KOTAK KARTU UNDANGAN (BACKGROUND CARD & BORDER)
+   ======================================================== */
+.undangan-card {
+    background-color: #0642db;   /* Mewarnai latar belakang kotak undangan dengan warna biru */
+    border: 3px double #D4AF37;  /* Membuat bingkai garis ganda berwarna emas khas kerajaan */
+    padding: 40px;               /* Memberikan jarak spasi bagian dalam antara tulisan dan bingkai */
+    text-align: center;          /* Membuat semua teks di dalam kotak otomatis rata tengah */
+    border-radius: 8px;          /* Membuat sudut-sudut kotak menjadi sedikit melengkung (tidak lancip) */
+    max-width: 450px;            /* Membatasi lebar maksimal kotak agar tidak terlalu melar di layar lebar */
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5); /* Memberikan bayangan hitam tipis agar kotak terlihat timbul */
+}
+
+    </style>
+</head>
+<body>
+    <!-- Kotak pembungkus agar kedua tombol bisa berjejer ke samping -->
+        <div class="navigasi-undangan">
+    <!-- Tombol Kembali / Sebelumnya -->
+    <a href="undangan kerajaan.html" class="btn-estetik">&laquo; Sebelumnya</a>
+    
+    <!-- Tombol Maju / Selanjutnya -->
+    <a href="heading.html" class="navigasi-undangan">Selanjutnya &raquo;</a>
+</div>
+    <div class="undangan-card">
+    <h1>Kerajaan Hardwill</h1>
+    <br>
+    <p>"Dua hati bersatu dalam ikatan suci,di bawah saksi kemegahan istana.Selamat Datang di Hari Bahagia Kerajaan Hardwill." </p>
+    </div>
+</body>
+</html>

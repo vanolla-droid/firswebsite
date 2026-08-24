@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Kerajaan</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Mengambil Font Great Vibes & Playfair Display dari Google Fonts -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+    <style>
+      /* ========================================================
+   PENGATURAN HALAMAN UTAMA (BACKGROUND & POSISI)
+   ======================================================== */
+body {
+    background-color: #0B192C;   /* Mewarnai latar belakang layar dengan warna biru sangat tua */
+    color: #F1F1F1;              /* Mewarnai semua teks umum dengan warna putih keabu-abuan */
+    font-family: 'Playfair Display', serif; /* Mengubah gaya huruf menjadi font klasik berpita (formal) */
+    display: flex;               /* Mengaktifkan sistem tata letak fleksibel */
+    justify-content: center;     /* Menggeser kotak undangan tepat ke tengah secara horizontal (kiri-kanan) */
+    align-items: center;         /* Menggeser kotak undangan tepat ke tengah secara vertikal (atas-bawah) */
+    height: 100vh;               /* Membuka tinggi halaman penuh sesuai ukuran tinggi layar monitor/HP */
+    margin: 0;                   /* Menghilangkan jarak aman bawaan di pinggir layar komputer */
+}
+
+/* ========================================================
+   KOTAK KARTU UNDANGAN (BACKGROUND CARD & BORDER)
+   ======================================================== */
+.undangan-card {
+    background-color: #0642db;   /* Mewarnai latar belakang kotak undangan dengan warna biru */
+    border: 3px double #D4AF37;  /* Membuat bingkai garis ganda berwarna emas khas kerajaan */
+    padding: 40px;               /* Memberikan jarak spasi bagian dalam antara tulisan dan bingkai */
+    text-align: center;          /* Membuat semua teks di dalam kotak otomatis rata tengah */
+    border-radius: 8px;          /* Membuat sudut-sudut kotak menjadi sedikit melengkung (tidak lancip) */
+    max-width: 450px;            /* Membatasi lebar maksimal kotak agar tidak terlalu melar di layar lebar */
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5); /* Memberikan bayangan hitam tipis agar kotak terlihat timbul */
+}
+
+/* ========================================================
+   NAMA UTAMA / NAMA PENGANTIN(pangeran dan putri)
+   ======================================================== */
+.nama-kerajaan {
+    font-family: 'Great Vibes', cursive; /* Mengubah font nama menjadi tulisan latin bersambung/estetik */
+    font-size: 55px;             /* Mengatur ukuran huruf nama pengantin menjadi sangat besar */
+    color: #e3d557;              /* Mewarnai teks nama dengan warna kuning emas cerah */
+    margin: 20px 0;              /* Memberikan jarak renggang di atas dan di bawah tulisan nama */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Memberikan bayangan hitam lembut di belakang teks nama */
+}
+
+/* ========================================================
+   TEKS SALAM / KATA PENGANTAR FORMAL(menerima kehormatan...)
+   ======================================================== */
+.salam {
+    font-size: 14px;             /* Mengatur ukuran huruf teks salam menjadi agak kecil */
+    letter-spacing: 3px;         /* Memberikan jarak renggang antarfoto (huruf) agar terlihat elegan */
+    text-transform: uppercase;   /* Otomatis mengubah semua huruf menjadi HURUF KAPITAL (BESAR ALL) */
+    color: #D4AF37;              /* Mewarnai teks salam dengan warna emas tua */
+}
+
+/* ========================================================
+   DESAIN TOMBOL MEWAH (TOMBOL LIHAT UNDANGAN / BUKA)
+   ======================================================== */
+.btn-royal {
+    font-family: 'Playfair Display', serif; /* Menyamakan font tombol dengan font utama halaman */
+    background: linear-gradient(135deg, #FFD700, #D4AF37); /* Mewarnai tombol dengan gradasi emas mewah miring */
+    color: #ff82b2;              /* Mewarnai teks di dalam tombol dengan warna pink */
+    border: 1px solid #B8860B;   /* Memberikan garis pinggir tipis pada tombol berwarna emas gelap */
+    padding: 12px 30px;          /* Mengatur ketebalan tombol (12px atas-bawah, 30px kiri-kanan) */
+    font-size: 15px;             /* Mengatur ukuran huruf di dalam tombol */
+    font-weight: bold;           /* Membuat tulisan di dalam tombol menjadi tebal */
+    text-transform: uppercase;   /* Otomatis mengubah tulisan tombol menjadi HURUF KAPITAL */
+    letter-spacing: 2px;         /* Memberikan jarak renggang 2 piksel antarhuruf di dalam tombol */
+    border-radius: 4px;          /* Membuat sudut-sudut tombol sedikit melengkung */
+    cursor: pointer;             /* Mengubah ikon kursor mouse menjadi telunjuk saat menyentuh tombol */
+    transition: all 0.3s ease;   /* Membuat efek animasi perubahan warna tombol menjadi halus (0.3 detik) */
+    box-shadow: 0px 4px 15px rgba(212, 175, 55, 0.3); /* Memberikan efek bayangan bersinar warna emas di bawah tombol */
+}
+
+/* ========================================================
+   EFEK SAAT TOMBOL DISENTUH KURSOR MOUSE (HOVER)
+   ======================================================== */
+.btn-royal:hover {
+    background: linear-gradient(135deg, #D4AF37, #B8860B); /* Mengubah gradasi warna emas menjadi sedikit lebih gelap */
+    color: #FFFFFF;              /* Mengubah warna tulisan tombol dari pink menjadi putih bersih */
+    transform: translateY(-2px); /* Memberikan efek animasi tombol sedikit terangkat ke atas saat disentuh */
+    box-shadow: 0px 6px 20px rgba(212, 175, 55, 0.5); /* Membuat bayangan emas di bawah tombol menjadi lebih terang bersinar */
+}
+
+    </style>
+</head>
+<body>
+<!-- Kotak pembungkus agar kedua tombol bisa berjejer ke samping -->
+<div class="navigasi-undangan">
+    <!-- Tombol Kembali / Sebelumnya -->
+    <a href="heading2.html" class="btn-estetik">&laquo; Sebelumnya</a>
+    
+    <!-- Tombol Maju / Selanjutnya -->
+    <a href="isi undangan.html" class="navigasi-undangan">Selanjutnya &raquo;</a>
+
+</div>
+
+    <!-- Struktur Kartu Undangan -->
+    <div class="undangan-card">
+        <p class="salam">Menerima Kehormatan Kehadiran Anda</p>
+        
+        <!-- Baris yang menggunakan Font Great Vibes -->
+        <h1 class="nama-kerajaan">Pangeran & Putri</h1>
+        
+
+        <!-- Tombol untuk Pindah Halaman -->
+        <button type="button" class="btn-royal" onclick="pindahHalaman()">
+            Buka Undangan
+        </button>
+    </div>
+
+    <script>
+        function pindahHalaman() {
+            // Ganti 'halaman_berikutnya.html' dengan nama file atau link web tujuan Anda
+            window.location.href = "isi undangan.html"; 
+        }
+    </script>
+
+</body>
+</html>
