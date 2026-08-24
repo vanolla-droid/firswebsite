@@ -5,6 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>gaktauapa</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+      /* ========================================================
+   PENGATURAN VIDEO YOUTUBE MINI LANDSCAPE (RESPONSIF)
+   ======================================================== */
+.video-container {
+    position: relative;
+    max-width: 280px;            /* Mengunci lebar video agar berukuran kecil (280 pixel) */
+    padding-bottom: 157.5px;     /* Mengunci bentuk landscape proporsional (Rasio 16:9) */
+    height: 0;
+    overflow: hidden;
+    margin: 20px auto;           /* Menjaga agar posisi video kecil berada tepat di tengah */
+    border: 2px solid #D4AF37;   /* Bingkai emas mewah agar serasi dengan tema kerajaan */
+    border-radius: 6px;          /* Sudut melengkung halus */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4); /* Efek bayangan timbul */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;                 /* Memaksa video mengikuti lebar container mini (280px) */
+    height: 100%;                /* Memaksa video mengikuti tinggi container mini (157.5px) */
+}
+
+    </style>
 </head>
 <body bgcolor="#FFD3F0" text="#F53233">
     
@@ -41,5 +66,11 @@
     <!-- Tombol Maju / Selanjutnya -->
     <a href="undangan kerajaan.html" class="navigasi-undangan">Selanjutnya &raquo;</a>
 </div>
+<audio src="Celtic Music - Fantasy Worlds Through Flute Sounds _ Relaxing Medieval Music Mix for Work & Study,.mp3" autoplay loop controls></audio>
+<!-- Membungkus video agar ukurannya mengecil dan rapi -->
+<div class="video-container">
+    <iframe src="https://www.youtube.com/embed/g2CyZm77-zQ?si=PsdCzdJchtfiRBPI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
 </body>
 </html>
