@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>gaktauapa</title>
     <link rel="stylesheet" href="style.css">
-    <style>
+   
+</head>
+
+ <style>
       /* ========================================================
    PENGATURAN VIDEO YOUTUBE MINI LANDSCAPE (RESPONSIF)
    ======================================================== */
@@ -15,7 +18,6 @@
     padding-bottom: 157.5px;     /* Mengunci bentuk landscape proporsional (Rasio 16:9) */
     height: 0;
     overflow: hidden;
-    margin: 20px auto;           /* Menjaga agar posisi video kecil berada tepat di tengah */
     border: 2px solid #D4AF37;   /* Bingkai emas mewah agar serasi dengan tema kerajaan */
     border-radius: 6px;          /* Sudut melengkung halus */
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4); /* Efek bayangan timbul */
@@ -24,32 +26,47 @@
 .video-container iframe {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 0;                     /* Menggeser video ke kanan agar tetap berada di tengah bingkai */
     width: 100%;                 /* Memaksa video mengikuti lebar container mini (280px) */
     height: 100%;                /* Memaksa video mengikuti tinggi container mini (157.5px) */
 }
 
+table, th, td {
+  border: 1px solid rgb(8, 8, 0);
+}   
     </style>
-</head>
+
 <body bgcolor="#FFD3F0" text="#F53233">
     
     <h1>makanan yang saya suka</h1>
+    <hr>
+    <P>
+        Makanan yang enak bukan sekadar pengisi perut kosong, melainkan sebuah karya seni kuliner yang mampu memanjakan seluruh pancaindra kita sejak suapan pertama.
+         Kelezatan sebuah hidangan lahir dari perpaduan harmonis antara bumbu-bumbu segar, teknik memasak yang tepat, serta keseimbangan rasa yang pas antara gurih,
+        manis, asin, atau pedas. Tidak hanya di lidah, makanan yang lezat juga selalu diawali oleh aroma wangi yang menggugah selera saat disajikan panas-panas,
+        serta diperkuat oleh tekstur yang sempurna.
+    </P>
+    <br>
+    <p>seperti daging yang empuk atau lapisan luar yang renyah. Lebih dari itu, makanan sering kali terasa jauh lebih nikmat karena menyimpan memori tertentu,
+        baik itu kehangatan masakan ibu di rumah maupun momen kebersamaan yang berkesan bersama orang-orang tercinta.
+       </p>
     <p>
+        
         <ul>
             <li>1.mie ayam</li>
             <li>2.seblak</li>
             <li>3.yang lainnya</li>
         </ul>
     </p>
-    <h1>minuman yang saya suka</h1>
+    <h3>minuman yang saya suka</h3>
     <p>
-        <ol>
+          <ol>
             <li>jus jambu</li>
             <li>yang lainnya</li>
         </ol>
     </p>
-    <button onclick="location.href='heading.html'">halaman ke satu</button>
-    <h2>minuman yang saya suka ke dua</h2>
+    
+    <p>Makanan adalah kebutuhan pokok manusia yang tidak hanya berfungsi sebagai sumber energi, tetapi juga menjadi bagian penting dari identitas budaya dan gaya hidup. Setiap daerah di dunia memiliki cara unik dalam mengolah bahan pangan, menciptakan keberagaman kuliner yang kaya akan cita rasa, warna, dan aroma yang mencerminkan tradisi setempat.</p>
     <p>
         <ul style="list-style-type: upper-roman;">
             <li>1.kopi</li>
@@ -57,6 +74,33 @@
             <li>3.jus alpukat</li>
         </ul>
     </p>
+
+    <h2>tabel keperluan</h2>
+   <table style="width:100%">
+    <tr>
+        <th>Nama</th>
+        <th>tempat</th>
+        <th>keperluan</th>
+    </tr>
+    <tr>
+        <td>caelum</td>
+        <td>aula</td>
+        <td>makan malam</td>
+    </tr>
+    <tr>
+        <td>alexia</td>
+        <td>kamar</td>
+        <td>tidur bersama</td>
+    </tr>
+    <tr>
+        <td>silfia</td>
+        <td>taman</td>
+        <td>piknik</td>  
+    </tr>
+   </table>
+
+        <button onclick="location.href='heading.html'">halaman ke satu</button>
+
     <!-- Kotak pembungkus agar kedua tombol bisa berjejer ke samping -->
 <div class="navigasi-undangan">
 
@@ -66,11 +110,20 @@
     <!-- Tombol Maju / Selanjutnya -->
     <a href="undangan kerajaan.html" class="navigasi-undangan">Selanjutnya &raquo;</a>
 </div>
+<br>
+<p>audio</p>
 <audio src="Celtic Music - Fantasy Worlds Through Flute Sounds _ Relaxing Medieval Music Mix for Work & Study,.mp3" autoplay loop controls></audio>
+
+<h2>vidio pendek</h2>
+<video width="400"controls>
+  <source src="Nature Video 30 Seconds_WhatsApp Status Video_Nature Background Videos.mp4" type="video/mp4">
+</video>
+
+<h2>video you tube</h2>
 <!-- Membungkus video agar ukurannya mengecil dan rapi -->
 <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/g2CyZm77-zQ?si=PsdCzdJchtfiRBPI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/4AcuL6us4Go?si=ovldOon8raSSKpTW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
-
+<p><a href="https://youtu.be/4AcuL6us4Go?si=tuMv7m4NMtnnjTeo" target="_blank">Lihat video di YouTube</a></p>
 </body>
 </html>

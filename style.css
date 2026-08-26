@@ -27,7 +27,7 @@
             left: 30px;           /* Jarak 30 pixel dari batas KIRI layar */
             z-index: 9999;        /* Memastikan tombol selalu berada di lapisan paling atas */
 
-            /* 2. KODE DESAIN ESTETIK (WARNA) */
+            /* 2. KODE DESAIN ESTETIK (WARNA) */    
             display: inline-block;
             padding: 14px 28px;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
